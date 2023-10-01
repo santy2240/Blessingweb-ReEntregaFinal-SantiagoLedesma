@@ -1,0 +1,40 @@
+/*bloque del main*/
+main{
+    section{
+        width:100%;
+        height: 100%;
+        
+    }
+}
+
+.servicios{
+    display: flex;
+    margin-left: 25px;
+    visibility: collapse;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+   justify-content: center;
+   .icono-servicios{
+   text-decoration: none;
+   color: black;
+    padding: 15px;
+   }
+
+    .info-servicios{
+        padding-left: 15px;
+        margin-right: 100px;
+        padding-right: 50px;
+        text-align: center;
+        border-right: 3px solid black;
+        .text-arriba{
+            font-size: 20px;
+            font-weight: 600;
+        }
+       
+        .text-abajo{
+            font-size: 15px;
+        }
+        
+    }
+}

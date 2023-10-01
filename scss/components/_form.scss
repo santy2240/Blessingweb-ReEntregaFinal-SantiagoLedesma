@@ -1,0 +1,75 @@
+/* formulario de contacto */
+h2 {
+    color: #283629;
+    font-size: 35px;
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    max-width: 80%;
+    background-color: #EDFFF0;
+    margin-bottom: 10%;
+
+        label {
+            color: #283629;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        input,textarea {
+            padding: 17px 25px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            border: 2px solid #F0FAF1;
+             color: #283629;
+            outline: none;
+            width: 100%;
+            background-color: #EDFFF0;
+            &::placeholder {
+                color: #b5cab6;
+            }
+        }
+  }
+    
+
+.input-group {         
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.form-txt {
+margin-bottom: 30px;      
+display: flex;
+justify-content: space-between;  
+text-align: center;
+
+    a {
+        color: #75b28e;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+ }
+
+.btn {
+ font-size: 16px;
+ color: #FFFFFF;
+ border: 0;
+ border-radius: 25px;
+ background-color: #51D94C;
+ box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+     cursor: pointer;
+    :hover {
+            background-color: #50E04B;
+        }
+    }
+.texto-de-contacto{
+ padding:3% ;
+ font-weight: 600;
+}

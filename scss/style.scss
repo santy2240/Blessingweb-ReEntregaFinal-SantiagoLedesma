@@ -1,0 +1,22 @@
+
+/*estilos de home*/
+@import "html/home";
+
+/* components */
+
+@import "components/cards";
+@import "components/form";
+
+/* layout */
+@import "layout/footer";
+@import "layout/main";
+@import "layout/navbar";
+
+/*reset*/
+@import "base/reset";
+
+/* mq desktop */
+@import "abstracts/mq-desktop";
+
+/*mq tablet*/
+@import "abstracts/mq-tablet";

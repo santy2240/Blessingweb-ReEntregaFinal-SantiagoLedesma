@@ -1,0 +1,85 @@
+//mq desktop
+
+@media screen and (min-width:1024px){
+
+    /* main */
+    .servicios{
+        visibility: visible;
+    }
+    
+/* bloque de tarjetas de productos */
+
+.tarjetas-generales{
+    padding: 1rem;
+    background-color: $color-principal;
+    display: flex;
+    padding-left: 15%;
+    justify-content: center;
+        p{
+            font-family:$fuente ;
+            .cuotas{
+                font-size: 5px;
+                margin-bottom: 100%;
+            }
+            .descripcion-producto{
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        img{
+            display: flex;
+            width: 70%;
+            justify-content: center;
+            padding-left: 2%;
+        }
+    } 
+
+
+
+/* bloque de pag de preg frecuentes */
+section {
+    .metododepago {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+/*bloque de pag de como comprar*/
+
+.como-comprar{
+    padding-bottom: 5%;
+    padding-left: 10px;
+    background-color: $color-principal;
+    
+    .texto-titulo{
+        font-size: 25px;
+        font-weight:600;
+    }
+    .texto-principal{
+        font-size: 17px;
+        font-weight: 450;
+        text-decoration:underline;
+    }
+    
+    ol{
+        li{
+            padding-bottom: 2%;
+            font-size: 15px;
+            text-align:left;
+        }
+    }
+}
+
+
+/* bloque de contacto */
+.contacto {
+  
+form {
+        padding: 40px; 
+       margin-bottom: 10%;
+        max-width: 500px; 
+
+}
+    }
+}
+

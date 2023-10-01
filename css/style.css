@@ -1,0 +1,419 @@
+/*estilos de home*/
+/*bloque de body*/
+body {
+  background-color: #F5F1ED;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  background-color: #F5F1ED;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* bloque de pag de productos */
+.productos {
+  background-color: #F5F1ED;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.productos hr {
+  height: 1px;
+  background-color: black;
+}
+.productos .titulo-productos {
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 2%;
+}
+.productos ul {
+  list-style-type: none;
+}
+.productos ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* bloque de pag de como comprar */
+.como-comprar {
+  padding-bottom: 7%;
+  padding-left: 10px;
+  padding-right: 8%;
+  background-color: #F5F1ED;
+}
+.como-comprar .texto-titulo {
+  font-size: 25px;
+  font-weight: 600;
+}
+.como-comprar .texto-principal {
+  font-size: 17px;
+  font-weight: 450;
+  text-decoration: underline;
+}
+.como-comprar ol li {
+  padding-bottom: 4%;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* bloque de pag de preguntas frecuentes */
+.preguntas {
+  background-color: #F5F1ED;
+  padding-left: 10px;
+  padding-bottom: 10%;
+  padding-right: 8%;
+}
+.preguntas .titulo-preguntas {
+  font-size: 25px;
+  font-weight: 500;
+}
+.preguntas .preguntas-frecuentes {
+  font-size: 17px;
+  font-weight: 500;
+}
+.preguntas img {
+  width: 50%;
+  display: block;
+}
+
+/* bloque de pag de contacto */
+.contacto {
+  background-color: #F5F1ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* components */
+/*bloques tarjetas de productos*/
+.tarjetas-generales {
+  padding: 1rem;
+  background-color: #F5F1ED;
+  display: flex;
+  padding-left: 15%;
+  justify-content: center;
+}
+.tarjetas-generales p {
+  font-family: "DM Sans", sans-serif;
+}
+.tarjetas-generales .title-producto {
+  font-size: 20px;
+  text-decoration: overline;
+}
+.tarjetas-generales .cuotas {
+  font-size: 13px;
+  padding-top: 5px;
+}
+.tarjetas-generales img {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  padding-left: 5%;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.tarjetas-generales img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+/* formulario de contacto */
+h2 {
+  color: #283629;
+  font-size: 35px;
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  max-width: 80%;
+  background-color: #EDFFF0;
+  margin-bottom: 10%;
+}
+form label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+form input, form textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: 2px solid #F0FAF1;
+  color: #283629;
+  outline: none;
+  width: 100%;
+  background-color: #EDFFF0;
+}
+form input::placeholder, form textarea::placeholder {
+  color: #b5cab6;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.form-txt a {
+  color: #75b28e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 16px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51D94C;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+.btn :hover {
+  background-color: #50E04B;
+}
+
+.texto-de-contacto {
+  padding: 3%;
+  font-weight: 600;
+}
+
+/* layout */
+/*bloque del footer*/
+/*:::::Pie de Pagina*/
+footer {
+  width: 100%;
+  background-color: #1d2021;
+}
+footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 10px 0px;
+}
+footer .grupo-1 div figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .grupo-1 div figure img {
+  width: 250px;
+}
+footer .grupo-1 div h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+footer .grupo-1 div p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+footer .grupo-1 div .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #252728;
+  text-align: center;
+  transition: all 300ms ease;
+}
+footer .grupo-1 div .red-social a:hover {
+  color: aqua;
+}
+footer div {
+  background-color: #212325;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+footer div small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+/*bloque del main*/
+main section {
+  width: 100%;
+  height: 100%;
+}
+
+.servicios {
+  display: flex;
+  margin-left: 25px;
+  visibility: collapse;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  justify-content: center;
+}
+.servicios .icono-servicios {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+.servicios .info-servicios {
+  padding-left: 15px;
+  margin-right: 100px;
+  padding-right: 50px;
+  text-align: center;
+  border-right: 3px solid black;
+}
+.servicios .info-servicios .text-arriba {
+  font-size: 20px;
+  font-weight: 600;
+}
+.servicios .info-servicios .text-abajo {
+  font-size: 15px;
+}
+
+/*bloque del header*/
+header {
+  text-align: center;
+  background-color: black;
+  color: #F5F1ED;
+  font-size: 120%;
+  font-family: "DM Sans", sans-serif;
+}
+header p {
+  font-size: 150%;
+}
+header nav ul li {
+  color: #F5F1ED;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mq desktop */
+@media screen and (min-width: 1024px) {
+  /* main */
+  .servicios {
+    visibility: visible;
+  }
+  /* bloque de tarjetas de productos */
+  .tarjetas-generales {
+    padding: 1rem;
+    background-color: #F5F1ED;
+    display: flex;
+    padding-left: 15%;
+    justify-content: center;
+  }
+  .tarjetas-generales p {
+    font-family: "DM Sans", sans-serif;
+  }
+  .tarjetas-generales p .cuotas {
+    font-size: 5px;
+    margin-bottom: 100%;
+  }
+  .tarjetas-generales p .descripcion-producto {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .tarjetas-generales img {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    padding-left: 2%;
+  }
+  /* bloque de pag de preg frecuentes */
+  section .metododepago {
+    width: 30%;
+    height: 30%;
+  }
+  /*bloque de pag de como comprar*/
+  .como-comprar {
+    padding-bottom: 5%;
+    padding-left: 10px;
+    background-color: #F5F1ED;
+  }
+  .como-comprar .texto-titulo {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .como-comprar .texto-principal {
+    font-size: 17px;
+    font-weight: 450;
+    text-decoration: underline;
+  }
+  .como-comprar ol li {
+    padding-bottom: 2%;
+    font-size: 15px;
+    text-align: left;
+  }
+  /* bloque de contacto */
+  .contacto form {
+    padding: 40px;
+    margin-bottom: 10%;
+    max-width: 500px;
+  }
+}
+/*mq tablet*/
+/*mq de tablet*/
+@media screen and (min-width: 768px) {
+  /* pag de preguntas frecuentes*/
+  .preguntas {
+    padding-right: 8%;
+  }
+  .preguntas .titulo-preguntas {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  /*pag de como comprar*/
+  .como-comprar {
+    padding-right: 8%;
+  }
+  /*bloques tarjetas de productos*/
+  .tarjetas-generales {
+    padding-left: 4%;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

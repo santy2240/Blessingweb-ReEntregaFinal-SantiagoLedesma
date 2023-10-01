@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+
+
+/*bloque del header*/
+header{
+    text-align: center;
+    background-color: black;
+   color: $color-principal;
+    font-size: 120%;
+    font-family:$fuente;
+   p{
+    font-size: 150%;
+   }
+   nav{
+    ul{
+        li{
+           color: $color-principal;
+        }
+    }
+   }
+}

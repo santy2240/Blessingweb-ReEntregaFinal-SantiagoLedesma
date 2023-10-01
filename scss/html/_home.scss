@@ -1,0 +1,106 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+
+/*bloque de body*/
+body{
+    background-color: $color-principal;
+    font-family: $fuente;
+    overflow-x: hidden;
+}
+html{
+    background-color: $color-principal;
+    font-family: $fuente;
+}
+
+
+
+/* bloque de pag de productos */
+
+.productos{
+    background-color: $color-principal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    hr {
+        height: 1px;
+        background-color: black;
+      }
+    .titulo-productos{
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 2%;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            a{
+                text-decoration: none;
+                color: #000000;  
+            }
+        }
+    }
+}
+
+/* bloque de pag de como comprar */
+
+.como-comprar{
+    padding-bottom: 7%;
+    padding-left: 10px;
+    padding-right: 8%;
+    background-color: $color-principal;
+    
+    .texto-titulo{
+        font-size: 25px;
+        font-weight:600;
+    }
+    .texto-principal{
+        font-size: 17px;
+        font-weight: 450;
+        text-decoration:underline;
+    }
+    
+    ol{
+        li{
+            padding-bottom: 4%;
+            font-size: 15px;
+            text-align:left;
+        }
+    }
+}
+
+/* bloque de pag de preguntas frecuentes */
+.preguntas{
+    background-color: $color-principal;
+    padding-left: 10px;
+    padding-bottom: 10%;
+    padding-right: 8%;
+    .titulo-preguntas{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .preguntas-frecuentes{
+       font-size: 17px; 
+       font-weight: 500;
+    }
+
+    img{
+        width: 50%;
+        display: block;
+    }
+}
+
+/* bloque de pag de contacto */
+
+.contacto {
+    background-color: $color-principal;
+    display: flex; 
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ 
+
